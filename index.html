@@ -1,11 +1,335 @@
-<!DOCTYPE.html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NULP ONLINE LECTURE</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/enter.css">
 </head>
+
 <body>
-	<h1>Git 2</h1>
-	<p>My pppppp</p>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<div class="glyphicon glyphicon-education"></div>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/logo.png" height=30px></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Lectures <span class="sr-only"></span></a></li>
+					<li><a href="#">How It Works</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<li><a href="#" role="button" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control " placeholder="I want to learn about...">
+							<button type="submit" class="btn btn-default glyphicon glyphicon-search hidden-sm"></button>
+						</div>
+					</form>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<header class="jumbotron jumbotron-cust">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-md-10">
+					<h1 class="h1Text">Learn from the best. <br>
+Anytime. Anywhere.<br>
+                   Join our growing global community.</h1>
+					<button class="btn  btn-primary" type="submit" style="border-radius: 0px;">Find Lectures</button>
+				</div>
+				<div class="col-xs-12 col-md-2 hidden-sm hidden-xs">
+					<img src="img/logo_lp.png" alt="NULP" class="img-rounded custImg" style="float:right">
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<header class="container-inst container-fluid hidden-xs">
+		<div class="row">
+			<ol class=" container-cust">
+				<div class="col-md-2 col-sm-2">
+					<li>
+						<a href="#"><img src="img/ikni.png" alt="ikni" class="img-rounded" width="100px"></a>
+					</li>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<li>
+						<a href="#"><img src="img/ikta.png" alt="ikni" class="img-rounded" width="100px"></a>
+					</li>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<li>
+						<a href="#"><img src="img/IIMT.gif" alt="ikni" class="img-rounded" width="100px"></a>
+					</li>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<li>
+						<a href="#"><img src="img/idn.gif" alt="ikni" class="img-rounded" width="100px"></a>
+					</li>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<li>
+						<a href="#"><img src="img/mtan.jpg" alt="ikni" class="img-rounded" width="100px"></a>
+					</li>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<li>
+						<a href="#"><img src="img/IBID.jpg" alt="ikni" class="img-rounded" width="100px"></a>
+					</li>
+				</div>
+			</ol>
+		</div>
+	</header>
+	<div class="navarrow text-center hidden-xs"><img src="img/starting-soon-arrow.png" alt="soon"></div>
+	<!-- div class="jumborton"><!--  -->
+	<div class="container-fluid">
+		<h1 class="h1Cust" align="center">Popular Lectures today</h1>
+		<div class="row row-cust">
+			<div class="col-sm-4 col-md-3">
+				<div class="thumbnail">
+					<img src="img/html5.0.jpg" width="100%" alt="Responsive image">
+					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
+					</div>
+					<div class="caption">
+						<h3 class="text-my">HTML5 Introducing</h3>
+						<p class="text-muted ">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
+						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3">
+				<div class="thumbnail">
+					<img src="img/exel.jpg" width="100%" alt="Responsive image">
+					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
+					</div>
+					<div class="caption">
+						<h3>Analyzing Data with Excel</h3>
+						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
+						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3">
+				<div class="thumbnail">
+					<img src="img/6.00.2x_computational_thinking_homepage378x225.jpg" width="100%" alt="Responsive image">
+					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
+					</div>
+					<div class="caption">
+						<h3> Computational Thinking   </h3>
+						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
+						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3">
+				<div class="thumbnail">
+					<img src="img/2015-08-11_14.45.02.jpg" alt="Responsive image" width="100%">
+					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
+					</div>
+					<div class="caption">
+						<h3>HTML5 Introducing</h3>
+						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
+						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3">
+				<div class="thumbnail">
+					<img src="img/hr101x-course_card_image12012015-378x225.jpg" width="100%" alt="Responsive image">
+					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
+					</div>
+					<div class="caption">
+						<h3>HTML5 Introducing</h3>
+						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
+						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3">
+				<div class="thumbnail">
+					<img src="img/html5.0.jpg" width="100%" alt="Responsive image">
+					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
+					</div>
+					<div class="caption">
+						<h3>HTML5 Introducing</h3>
+						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
+						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4 col-md-3">
+				<div class="thumbnail">
+					<img src="img/exel.jpg" width="100%" alt="Responsive image">
+					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
+					</div>
+					<div class="caption">
+						<h3>Analyzing Data with Excel</h3>
+						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
+						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3">
+				<div class="thumbnail">
+					<img src="img/6.00.2x_computational_thinking_homepage378x225.jpg" width="100%" alt="Responsive image">
+					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
+					</div>
+					<div class="caption">
+						<h3> Computational Thinking   </h3>
+						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
+						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<ul class="pager">
+		<li><a href="#">Back</a></li>
+		<li><a href="#">Next</a></li>
+	</ul>
+	<hr>
+	<header class="container-fluid jumbotron">
+		<div class="row">
+			<div class="col-md-6 ">
+				<h3 class="getText">Get notified about new courses, events, community news &amp; more</h3>
+			</div>
+			<div class="col-md-6">
+				<form class="form-inline form-cust" name="regist">
+					<input type="email" class="form-control" name="email" size="50" placeholder="Email Address" required>
+					<button type="button" class="btn btn-danger" onclick="checkEmail(regist)">Registed</button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<hr>
+	<footer>
+		<p class="text-center">NULP ONLINE LECTURE © 2016
+			<br>
+			<a href="https://plus.google.com/u/0/104177002583985997312">OLEG GRECHUKH</a></p>
+	</footer>
+
+
+	<!-- BEGIN # MODAL LOGIN -->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img class="img-responsive" id="img_logo" src="img/logo.png">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+
+				<!-- Begin # DIV Form -->
+				<div id="div-forms">
+
+					<!-- Begin # Login Form -->
+					<form id="login-form">
+						<div class="modal-body">
+							<div id="div-login-msg">
+								<div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+								<span id="text-login-msg">Type your username and password.</span>
+							</div>
+							<input id="login_username" class="form-control" type="text" placeholder="Username" required>
+							<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Remember me
+								</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+							</div>
+							<div>
+								<button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+								<button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+							</div>
+						</div>
+					</form>
+					<!-- End # Login Form -->
+
+					<!-- Begin | Lost Password Form -->
+					<form id="lost-form" style="display:none;">
+						<div class="modal-body">
+							<div id="div-lost-msg">
+								<div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+								<span id="text-lost-msg">Type your e-mail.</span>
+							</div>
+							<input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+							</div>
+							<div>
+								<button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+								<button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+							</div>
+						</div>
+					</form>
+					<!-- End | Lost Password Form -->
+					<!-- Begin | Register Form -->
+					<form id="register-form" style="display:none;">
+						<div class="modal-body">
+							<div id="div-register-msg">
+								<div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+								<span id="text-register-msg">Register an account.</span>
+							</div>
+							<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+							<input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+							<input id="register_password" class="form-control" type="password" placeholder="Password" required>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+							</div>
+							<div>
+								<button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+								<button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+							</div>
+						</div>
+					</form>
+					<!-- End | Register Form -->
+
+				</div>
+				<!-- End # DIV Form -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<!-- Include all compiled plugins (below), or include individual files as needed -->
+				<script src="js/bootstrap.js"></script>
+				<script src="js/cust.js"></script>
+				<script src="js/enter.js"></script>
+			</div>
+		</div>
+	</div>
+	<!-- END # MODAL LOGIN -->
 </body>
+
 </html>
