@@ -11,6 +11,8 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/enter.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,13 +26,12 @@
 				</button>
 				<a class="navbar-brand" href="#"><img src="img/logo.png" height=30px></a>
 			</div>
-
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#">Lectures <span class="sr-only"></span></a></li>
 					<li><a href="#">How It Works</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="about.html">About</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 
@@ -39,7 +40,7 @@
 					<form class="navbar-form navbar-right" role="search">
 						<div class="form-group">
 							<input type="text" class="form-control " placeholder="I want to learn about...">
-							<button type="submit" class="btn btn-default glyphicon glyphicon-search hidden-sm"></button>
+							<button type="submit" class="btn btn-default glyphicon glyphicon-search hidden-xs"></button>
 						</div>
 					</form>
 				</ul>
@@ -49,8 +50,22 @@
 		<!-- /.container-fluid -->
 	</nav>
 
-	<header class="jumbotron jumbotron-cust">
+	<header class="jumbotron jumbotron-cust" id="jumbotron-cust">
 		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 text-left">
+				<br>
+					<div class="btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-default btn-xs" style="background: #6abefd" onclick="changeCollor('#6abefd')">
+							•</button>
+						<button type="button" class="btn btn-default btn-xs" style="background: #a8fd6a" onclick="changeCollor('#a8fd6a')">
+							•</button>
+						<button type="button" class="btn btn-default btn-xs" style="background: #fd9d6a" onclick="changeCollor('#fd9d6a')">
+							•</button>
+					</div>
+
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-xs-12 col-md-10">
 					<h1 class="h1Text">Learn from the best. <br>
@@ -105,17 +120,18 @@ Anytime. Anywhere.<br>
 	<div class="navarrow text-center hidden-xs"><img src="img/starting-soon-arrow.png" alt="soon"></div>
 	<!-- div class="jumborton"><!--  -->
 	<div class="container-fluid">
-		<h1 class="h1Cust" align="center">Popular Lectures today</h1>
+		<h1 class="h1Cust text-center">Popular Lectures today</h1>
 		<div class="row row-cust">
 			<div class="col-sm-4 col-md-3">
-				<div class="thumbnail">
-					<img src="img/html5.0.jpg" width="100%" alt="Responsive image">
+				<div class="thumbnail white-panel">
+					<img src="img/html5.0.jpg" id ="myImg" width="100%" alt="Responsive image" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
 					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
 					</div>
-					<div class="caption">
-						<h3 class="text-my">HTML5 Introducing</h3>
+					<div class="caption" id = "Cap">
+						<h3 class="text-my" onclick="edit()">HTML5 Introducing</h3>
+						<div id = "forInp"></div>
 						<p class="text-muted ">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
-						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+						<p><a class="btn btn-primary ts">Watch now</a> <a href="/css/bootstrap.css" class="btn btn-default" role="button">Review</a></p>
 					</div>
 				</div>
 			</div>
@@ -127,7 +143,7 @@ Anytime. Anywhere.<br>
 					<div class="caption">
 						<h3>Analyzing Data with Excel</h3>
 						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
-						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+						<p><a href="#" class="btn btn-primary ts" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
 					</div>
 				</div>
 			</div>
@@ -139,7 +155,7 @@ Anytime. Anywhere.<br>
 					<div class="caption">
 						<h3> Computational Thinking   </h3>
 						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
-						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+						<p><a href="#" class="btn btn-primary ts" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
 					</div>
 				</div>
 			</div>
@@ -151,7 +167,7 @@ Anytime. Anywhere.<br>
 					<div class="caption">
 						<h3>HTML5 Introducing</h3>
 						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
-						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+						<p><a href="#" class="btn btn-primary ts" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
 					</div>
 				</div>
 			</div>
@@ -163,7 +179,7 @@ Anytime. Anywhere.<br>
 					<div class="caption">
 						<h3>HTML5 Introducing</h3>
 						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
-						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+						<p><a href="#" class="btn btn-primary ts" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
 					</div>
 				</div>
 			</div>
@@ -175,7 +191,7 @@ Anytime. Anywhere.<br>
 					<div class="caption">
 						<h3>HTML5 Introducing</h3>
 						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
-						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+						<p><a href="#" class="btn btn-primary ts" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
 					</div>
 				</div>
 			</div>
@@ -189,25 +205,12 @@ Anytime. Anywhere.<br>
 					<div class="caption">
 						<h3>Analyzing Data with Excel</h3>
 						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
-						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 col-md-3">
-				<div class="thumbnail">
-					<img src="img/6.00.2x_computational_thinking_homepage378x225.jpg" width="100%" alt="Responsive image">
-					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
-					</div>
-					<div class="caption">
-						<h3> Computational Thinking   </h3>
-						<p class="text-muted">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
-						<p><a href="#" class="btn btn-primary" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
+						<p><a href="#" class="btn btn-primary ts" role="button">Watch now</a> <a href="#" class="btn btn-default" role="button">Review</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 	<ul class="pager">
 		<li><a href="#">Back</a></li>
@@ -222,14 +225,94 @@ Anytime. Anywhere.<br>
 			<div class="col-md-6">
 				<form class="form-inline form-cust" name="regist">
 					<input type="email" class="form-control" name="email" size="50" placeholder="Email Address" required>
-					<button type="button" class="btn btn-danger" onclick="checkEmail(regist)">Registed</button>
+					<button type="button" class="btn btn-primary" onclick="checkEmail(regist)" data-toggle="modal" data-target=".bs-example-modal-lg">Registed</button>
 				</form>
 			</div>
 		</div>
+		<div class="text-center">
+			<div class="col-md-12">
+				<ul class="social-network social-circle">
+					<li><a href="#" class="icoRss soc" title="Rss"><i class="fa fa-rss"></i></a></li>
+					<li><a href="#" class="icoFacebook soc" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="icoTwitter soc" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="icoGoogle soc" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="icoLinkedin soc" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
-	<hr>
-	<footer>
-		<p class="text-center">NULP ONLINE LECTURE © 2016
+	<h1 class = "text-center h1Cust">FEEDBACK</h1>
+	<div class="container-fluid content">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="thumbnail adjust1">
+								<div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-circle img-responsive" src="//lh3.googleusercontent.com/CwqvHDWaW5olxey_a3SHGSA12W2n84I6I1zVdH1tFX1Ik3ti9PiYX4nb6R2fsUlGjpZnl6l4T8q_mKhCWgQ=s80#w=250&h=250"> </div>
+								<div class="col-md-10 col-sm-10 col-xs-12">
+									<div class="caption">
+										<p class="text-info lead adjust2">Suddenly, I Was an iOS Developer!</p>
+										<p><span class="glyphicon glyphicon-thumbs-up"></span> Right after I completed that first course with Swift, I was contacted by a company called Axxess about an iOS developer position. I figured I’d apply since I had nothing to lose. And after about two weeks of interviewing, I got the job! As the company continues to grow, I see this as an opportunity to grow along with them.</p>
+										<blockquote class="adjust2">
+											<p>Khang Vu</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.example1.com</cite></small> </blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="thumbnail adjust1">
+								<div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-rounded img-responsive" src="http://placehold.it/100"> </div>
+								<div class="col-md-10 col-sm-10 col-xs-12">
+									<div class="caption">
+										<p class="text-info lead adjust2">Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
+										<p><span class="glyphicon glyphicon-thumbs-up"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+										<blockquote class="adjust2">
+											<p>Lorem ipsum dolor.</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.Lorem.com</cite></small> </blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="thumbnail adjust1">
+								<div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-rounded img-responsive" src="http://placehold.it/100"> </div>
+								<div class="col-md-10 col-sm-10 col-xs-12">
+									<div class="caption">
+										<p class="text-info lead adjust2">Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
+										<p><span class="glyphicon glyphicon-thumbs-up"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, blanditiis. .</p>
+										<blockquote class="adjust2">
+											<p>Abhijit Goswami</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.Lorem.com</cite></small> </blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+		</div>
+	</div>
+
+	<footer class="text-center">
+		<hr>
+		<p class="">NULP ONLINE LECTURE © 2016
 			<br>
 			<a href="https://plus.google.com/u/0/104177002583985997312">OLEG GRECHUKH</a></p>
 	</footer>
@@ -326,10 +409,20 @@ Anytime. Anywhere.<br>
 				<script src="js/bootstrap.js"></script>
 				<script src="js/cust.js"></script>
 				<script src="js/enter.js"></script>
+				<script src="js/scroll.js"></script>
+				<script src="js/jquery-1.12.2.min.js"></script>
 			</div>
 		</div>
 	</div>
 	<!-- END # MODAL LOGIN -->
+
+	<div class="container">
+		<div class="scroll-top-wrapper ">
+			<span class="scroll-top-inner">
+    <div class="glyphicon glyphicon-menu-up"></div>
+  </span>
+		</div>
+	</div>
 </body>
 
 </html>
