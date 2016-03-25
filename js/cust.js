@@ -16,14 +16,6 @@ function changeCollor(collor) {
 		bt[i].style.backgroundColor = collor;
 }
 
-function mouseEnter() {
-	document.images["myImg"].src = '/img/html.png';
-}
-
-function mouseLeave() {
-	document.images["myImg"].src = '/img/html5.0.jpg';
-}
-
 function myFunction() {
 	var x = document.forms["frm1"];
 	var text = "";
@@ -58,3 +50,5 @@ function asd() {
 	parent.removeChild(del);
 	c = false;
 }
+document.getElementById("foot01").innerHTML =
+new Date().getFullYear() + " &copy; NULP ONLINE LECTURE. <br> All rights reserved.</p>";
