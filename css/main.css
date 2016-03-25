@@ -3,7 +3,9 @@
 	padding: 30px 10px 30px 10px;
 	margin-bottom: 0px;
 	margin: 0px auto;
-	background: #6abefd;
+	//background: #6abefd;
+	background-image: url(../img/girl.jpg);
+	//background: url(../img/devochka.jpg) no-repeat;
 	color: floralwhite;
 }
 
@@ -378,4 +380,22 @@ svg {
 .Animation
 {
   background: #030321;
+}
+.row-inline > [class^="col-"]{
+	float: none;
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.modal-cust {
+	width: 110%;
+	background: #ffffff;
+}
+
+#myModal {
+	//width: 350px;
+	color: #ffffff;
+}
+body {
+	background: #f5f5f5;
 }
