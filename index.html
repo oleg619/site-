@@ -12,7 +12,10 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/enter.css">
 	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/social_net.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="js/jquery-1.12.2.min.js"></script>
 </head>
 
 <body>
@@ -53,25 +56,11 @@
 	<header class="jumbotron jumbotron-cust" id="jumbotron-cust">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12 text-left">
-				<br>
-					<div class="btn-group" role="group" aria-label="...">
-						<button type="button" class="btn btn-default btn-xs" style="background: #6abefd" onclick="changeCollor('#6abefd')">
-							•</button>
-						<button type="button" class="btn btn-default btn-xs" style="background: #a8fd6a" onclick="changeCollor('#a8fd6a')">
-							•</button>
-						<button type="button" class="btn btn-default btn-xs" style="background: #fd9d6a" onclick="changeCollor('#fd9d6a')">
-							•</button>
-					</div>
-
-				</div>
-			</div>
-			<div class="row">
 				<div class="col-xs-12 col-md-10">
-					<h1 class="h1Text">Learn from the best. <br>
+					<h1 class="h1Text" onmousedown="return false" onselect="return false">Learn from the best. <br>
 Anytime. Anywhere.<br>
                    Join our growing global community.</h1>
-					<button class="btn  btn-primary" type="submit" style="border-radius: 0px;">Find Lectures</button>
+					<button class="btn  btn-primary" type="submit" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" style="border-radius: 0px;">Find Lectures</button>
 				</div>
 				<div class="col-xs-12 col-md-2 hidden-sm hidden-xs">
 					<img src="img/logo_lp.png" alt="NULP" class="img-rounded custImg" style="float:right">
@@ -91,7 +80,7 @@ Anytime. Anywhere.<br>
 				</div>
 				<div class="col-md-2 col-sm-2">
 					<li>
-						<a href="#"><img src="img/ikta.png" alt="ikni" class="img-rounded" width="100px"></a>
+						<a href="https://vk.com/id_7_2_4_5_2_5_6_4"><img src="img/ikta.png" alt="ikni" class="img-rounded" width="100px" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></a>
 					</li>
 				</div>
 				<div class="col-md-2 col-sm-2">
@@ -117,19 +106,21 @@ Anytime. Anywhere.<br>
 			</ol>
 		</div>
 	</header>
+
+
 	<div class="navarrow text-center hidden-xs"><img src="img/starting-soon-arrow.png" alt="soon"></div>
 	<!-- div class="jumborton"><!--  -->
 	<div class="container-fluid">
 		<h1 class="h1Cust text-center">Popular Lectures today</h1>
-		<div class="row row-cust">
+		<div class="row row-cust row-inline">
 			<div class="col-sm-4 col-md-3">
 				<div class="thumbnail white-panel">
-					<img src="img/html5.0.jpg" id ="myImg" width="100%" alt="Responsive image" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
+					<img src="img/html5.0.jpg" class = "slickHoverPlusBlue" id="myImg" width="100%" alt="Responsive image">
 					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
 					</div>
-					<div class="caption" id = "Cap">
+					<div class="caption" id="Cap">
 						<h3 class="text-my" onclick="edit()">HTML5 Introducing</h3>
-						<div id = "forInp"></div>
+						<div id="forInp"></div>
 						<p class="text-muted ">IKNI, dep.SE <span class="glyphicon glyphicon-user"></span></p>
 						<p><a class="btn btn-primary ts">Watch now</a> <a href="/css/bootstrap.css" class="btn btn-default" role="button">Review</a></p>
 					</div>
@@ -137,7 +128,7 @@ Anytime. Anywhere.<br>
 			</div>
 			<div class="col-sm-4 col-md-3">
 				<div class="thumbnail">
-					<img src="img/exel.jpg" width="100%" alt="Responsive image">
+					<img src="img/exel.jpg" class = "slickHoverPlusBlue" width="100%" alt="Responsive image">
 					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
 					</div>
 					<div class="caption">
@@ -149,7 +140,7 @@ Anytime. Anywhere.<br>
 			</div>
 			<div class="col-sm-4 col-md-3">
 				<div class="thumbnail">
-					<img src="img/6.00.2x_computational_thinking_homepage378x225.jpg" width="100%" alt="Responsive image">
+					<img src="img/6.00.2x_computational_thinking_homepage378x225.jpg" class = "slickHoverPlusBlue" width="100%" alt="Responsive image">
 					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
 					</div>
 					<div class="caption">
@@ -161,7 +152,7 @@ Anytime. Anywhere.<br>
 			</div>
 			<div class="col-sm-4 col-md-3">
 				<div class="thumbnail">
-					<img src="img/2015-08-11_14.45.02.jpg" alt="Responsive image" width="100%">
+					<img src="img/2015-08-11_14.45.02.jpg" class = "slickHoverPlusBlue" alt="Responsive image" width="100%">
 					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
 					</div>
 					<div class="caption">
@@ -173,7 +164,7 @@ Anytime. Anywhere.<br>
 			</div>
 			<div class="col-sm-4 col-md-3">
 				<div class="thumbnail">
-					<img src="img/hr101x-course_card_image12012015-378x225.jpg" width="100%" alt="Responsive image">
+					<img src="img/hr101x-course_card_image12012015-378x225.jpg" class = "slickHoverPlusBlue" width="100%" alt="Responsive image">
 					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
 					</div>
 					<div class="caption">
@@ -185,7 +176,7 @@ Anytime. Anywhere.<br>
 			</div>
 			<div class="col-sm-4 col-md-3">
 				<div class="thumbnail">
-					<img src="img/html5.0.jpg" width="100%" alt="Responsive image">
+					<img src="img/html5.0.jpg" class = "slickHoverPlusBlue" width="100%" alt="Responsive image">
 					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
 					</div>
 					<div class="caption">
@@ -199,7 +190,7 @@ Anytime. Anywhere.<br>
 
 			<div class="col-sm-4 col-md-3">
 				<div class="thumbnail">
-					<img src="img/exel.jpg" width="100%" alt="Responsive image">
+					<img src="img/exel.jpg" class = "slickHoverPlusBlue" width="100%" alt="Responsive image">
 					<div class="line"><span class="textCaption">Verified<span class="glyphicon glyphicon-ok"></span></span>
 					</div>
 					<div class="caption">
@@ -241,7 +232,7 @@ Anytime. Anywhere.<br>
 			</div>
 		</div>
 	</header>
-	<h1 class = "text-center h1Cust">FEEDBACK</h1>
+	<h1 class="text-center h1Cust">FEEDBACK</h1>
 	<div class="container-fluid content">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
@@ -273,13 +264,13 @@ Anytime. Anywhere.<br>
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="thumbnail adjust1">
-								<div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-rounded img-responsive" src="http://placehold.it/100"> </div>
+								<div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-circle img-responsive" src="http://rbr.ua/wp-content/uploads/2015/06/%D0%93%D0%B0%D1%80%D0%B0%D0%B61.jpg" width="80%"> </div>
 								<div class="col-md-10 col-sm-10 col-xs-12">
 									<div class="caption">
-										<p class="text-info lead adjust2">Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
-										<p><span class="glyphicon glyphicon-thumbs-up"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+										<p class="text-info lead adjust2">Продам гараж</p>
+										<p><span class="glyphicon glyphicon-thumbs-up"></span> Гараж хороший, рекомедую всім</p>
 										<blockquote class="adjust2">
-											<p>Lorem ipsum dolor.</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.Lorem.com</cite></small> </blockquote>
+											<p>Сергій.</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-earphone"></i> +380 80 800 80 80</cite></small> </blockquote>
 									</div>
 								</div>
 							</div>
@@ -312,9 +303,9 @@ Anytime. Anywhere.<br>
 
 	<footer class="text-center">
 		<hr>
-		<p class="">NULP ONLINE LECTURE © 2016
-			<br>
-			<a href="https://plus.google.com/u/0/104177002583985997312">OLEG GRECHUKH</a></p>
+		<p id="foot01">
+		</p>
+		<a href="https://plus.google.com/u/0/104177002583985997312">OLEG GRECHUKH</a>
 	</footer>
 
 
@@ -404,18 +395,13 @@ Anytime. Anywhere.<br>
 
 				</div>
 				<!-- End # DIV Form -->
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-				<!-- Include all compiled plugins (below), or include individual files as needed -->
-				<script src="js/bootstrap.js"></script>
-				<script src="js/cust.js"></script>
-				<script src="js/enter.js"></script>
-				<script src="js/scroll.js"></script>
-				<script src="js/jquery-1.12.2.min.js"></script>
+
+
+
 			</div>
 		</div>
 	</div>
 	<!-- END # MODAL LOGIN -->
-
 	<div class="container">
 		<div class="scroll-top-wrapper ">
 			<span class="scroll-top-inner">
@@ -423,6 +409,20 @@ Anytime. Anywhere.<br>
   </span>
 		</div>
 	</div>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/cust.js"></script>
+	<script src="js/enter.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/jq.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/jquery.slickhover.js"></script>
+
+	<script>
+$(window).load(function(){
+  $(".slickHoverPlusBlue").slickhover({icon:"http://pro2col.com/wp-content/uploads/2015/06/webinar-icon-300x300.png", color:"#050522"});
+});
+		</script>
 </body>
 
 </html>
